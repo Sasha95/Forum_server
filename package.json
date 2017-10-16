@@ -1,0 +1,24 @@
+{
+  "name": "forum_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "faker": "node fakeData"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasha95/Forum_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sasha95/Forum_server/issues"
+  },
+  "homepage": "https://github.com/Sasha95/Forum_server#readme",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "json2csv": "^3.11.4"
+  }
+}
