@@ -1,6 +1,5 @@
 const fs = require('fs')
 const faker = require('faker')
-const json2csv = require('json2csv')
 
 faker.locale = 'ru'
 
@@ -50,16 +49,6 @@ for (let i = 1; i <= numberOfPerson; i++) {
 }
 const db = { persons, posts }
 fs.writeFile('./data/db.json', JSON.stringify(db, null, 2), er => {
-  if (er) throw er
-  console.log('succsessfully')
-})
-
-fs.writeFile('./data/persons.csv', json2csv({ data: persons }), er => {
-  if (er) throw er
-  console.log('succsessfully')
-})
-
-fs.writeFile('./data/posts.csv', json2csv({ data: posts }), er => {
   if (er) throw er
   console.log('succsessfully')
 })
